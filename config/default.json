@@ -1,0 +1,29 @@
+{
+  "cors": {
+    "credentials": true,
+    "headers": ["Content-Type", "Accept"],
+    "methods": ["GET", "POST", "PATCH", "HEAD", "DELETE", "PUT"]
+  },
+  "session": {
+    "store": "memory",
+    "cookieExpire": 3600
+  },
+  "redis": {
+    "host": "localhost",
+    "port": 6379
+  },
+  "mysql": {
+    "host": "127.0.0.1",
+    "port": 3306,
+    "user": "root",
+    "password": "",
+    "db": "mailcup",
+    "logging": false,
+    "dialect": "mysql",
+    "pool": {
+      "max": 1,
+      "min": 0,
+      "idle": 30000
+    }
+  }
+}

@@ -1,4 +1,5 @@
 var DatabaseError = require('sequelize').DatabaseError;
+
 module.exports = function () {
   return function* (next) {
     try {

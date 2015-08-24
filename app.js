@@ -1,18 +1,20 @@
 var koa = require('koa');
-var config = require('config');
 var gzip = require('koa-gzip');
 var cors = require('koa-cors');
 var logger = require('koa-logger');
 var bodyParser = require('koa-bodyparser');
 
-var route = require('./route/');
+var route = require('./route');
 var session = require('./lib/session');
-var errorHander = require('./middlewares/errorHander');
-var permissionHander = require('./middlewares/permissionHander');
+var errorHander = require('./middleware/error-handler');
+var permissionHander = require('./middleware/permission-handler');
 
 var app = koa();
-var corsConfig = config.get('cors');
-
+var corsConfig = {
+  credentials: true,
+  headers: [ 'Content-Type', 'Accept' ],
+  methods: [ 'GET', 'POST', 'PATCH', 'HEAD', 'DELETE', 'PUT' ]
+};
 app.use(gzip());
 app.use(logger());
 app.use(bodyParser());

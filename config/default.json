@@ -1,9 +1,4 @@
 {
-  "cors": {
-    "credentials": true,
-    "headers": ["Content-Type", "Accept"],
-    "methods": ["GET", "POST", "PATCH", "HEAD", "DELETE", "PUT"]
-  },
   "session": {
     "store": "memory",
     "cookieExpire": 3600

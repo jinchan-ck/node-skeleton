@@ -4,7 +4,8 @@
   "description": "Node web application's bootstrap project.",
   "main": "app.js",
   "scripts": {
-    "test": "npm test"
+    "test": "node --harmony */*.js",
+    "start": "node --harmony app.js"
   },
   "repository": {
     "type": "git",
@@ -41,7 +42,7 @@
     "node-uuid": "1.4.2",
     "redis": "0.12.1",
     "request": "2.53.0",
-    "sequelize": "3.4.1",
+    "sequelize": "3.4.1"
   },
   "devDependencies": {
     "debug": "*",

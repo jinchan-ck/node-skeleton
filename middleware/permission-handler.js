@@ -6,7 +6,7 @@ module.exports = function () {
       this.session = JSON.parse(this.request.header.cookie);
       return yield* next;
     }
-    if (!this.session || !this.session.id) {
+    if (([ '/noop' ].indexOf(this.path) === -1) && (!this.session || !this.session.id)) {
       throw Exception.create(Exception.Types.Unauthorized, 'Unauthorized');
     }
     yield* next;

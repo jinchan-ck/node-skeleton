@@ -1,0 +1,14 @@
+var models = require('../model');
+
+var sequelize = models.sequelize;
+sequelize.dropAllSchemas().then(function() {
+  return sequelize.sync({
+    force: true
+  });
+}).then(function() {
+  console.log('DB reset success');
+  process.exit();
+}).catch(function(error) {
+  console.error(error);
+  process.exit();
+});

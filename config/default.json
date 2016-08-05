@@ -1,0 +1,28 @@
+{
+  "session": {
+    "store": "memory",
+    "cookieExpire": 3600
+  },
+  "redis": {
+    "host": "localhost",
+    "port": 6379
+  },
+  "mysql": {
+    "host": "127.0.0.1",
+    "port": 3306,
+    "user": "root",
+    "password": "wsck1991",
+    "db": "bootstrap",
+    "logging": false,
+    "dialect": "mysql",
+    "pool": {
+      "max": 1,
+      "min": 0,
+      "idle": 30000
+    }
+  },
+  "sms": {
+    "url": "SMS SERVICE API",
+    "appid": "APPID"
+  }
+}

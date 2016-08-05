@@ -1,0 +1,63 @@
+{
+  "name": "node-skeleton",
+  "version": "1.0.0",
+  "description": "Node web application's skeleton project.",
+  "main": "app.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test/*/*.js -t 20000",
+    "test-api": "./node_modules/mocha/bin/mochamocha test/api -t 20000",
+    "test-service": "./node_modules/mocha/bin/mocha test/service -t 20000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://sweetvvck@github.com/sweetvvck/node-skeleton.git"
+  },
+  "keywords": [
+    "skeleton",
+    "koa"
+  ],
+  "author": "Sweetvvck <sweetvvck@gmail.com> (http://blog.csdn.net/sweetvvck)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sweetvvck/node-skeleton/issues"
+  },
+  "homepage": "https://github.com/sweetvvck/node-skeleton#readme",
+  "dependencies": {
+    "captchapng": "0.0.1",
+    "co-redis": "2.1.0",
+    "config": "1.20.1",
+    "generic-pool": "2.4.2",
+    "http-errors": "1.4.0",
+    "koa": "1.2.0",
+    "koa-bodyparser": "2.1.0",
+    "koa-cors": "0.0.16",
+    "koa-generic-session": "1.10.2",
+    "koa-gzip": "0.1.0",
+    "koa-logger": "1.3.0",
+    "koa-mysql-session": "0.0.2",
+    "koa-redis": "2.0.1",
+    "koa-route": "2.4.2",
+    "koa-session": "3.3.1",
+    "lru-cache": "4.0.1",
+    "mysql": "2.10.2",
+    "node-uuid": "1.4.7",
+    "redis": "2.5.3",
+    "request": "2.72.0",
+    "sequelize": "3.23.1",
+    "hiredis": "0.4.1"
+  },
+  "devDependencies": {
+    "debug": "*",
+    "mocha": "*",
+    "should": "*",
+    "supertest": "0.15.0"
+  },
+  "apidoc": {
+    "title": "API Reference",
+    "url": "http://localhost",
+    "header": {
+      "title": "OverView",
+      "filename": "overview.md"
+    }
+  }
+}
